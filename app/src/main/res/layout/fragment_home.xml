@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/my_value"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    tools:context=".HomeFragment">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="352dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="@dimen/my_value"
+                    android:src="@drawable/notification"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/my_value"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="How are you today?"
+                    android:textSize="32dp"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/search_bar"
+                    android:layout_width="379dp"
+                    android:layout_height="78dp"
+                    android:padding="@dimen/my_value"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/search_bar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/searchbtn"
+                    android:padding="@dimen/my_value"
+                    app:layout_constraintBottom_toBottomOf="@+id/search_bar"
+                    app:layout_constraintEnd_toEndOf="@+id/search_bar"
+                    app:layout_constraintHorizontal_bias="0.039"
+                    app:layout_constraintStart_toStartOf="@+id/search_bar"
+                    app:layout_constraintTop_toTopOf="@+id/search_bar"
+                    app:layout_constraintVertical_bias="0.547" />
+
+                <TextView
+                    android:id="@+id/find_your_a"
+                    android:layout_width="186dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/my_value"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="@font/roboto"
+
+                    android:gravity="top"
+                    android:text="Find your amigos"
+                    android:textColor="#9CFFFFFF"
+                    android:textSize="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/search_bar"
+                    app:layout_constraintEnd_toEndOf="@+id/search_bar"
+                    app:layout_constraintHorizontal_bias="0.348"
+                    app:layout_constraintStart_toEndOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="@+id/search_bar"
+                    app:layout_constraintVertical_bias="0.565" />
+
+                <View
+                    android:id="@+id/rectangle_1"
+                    android:layout_width="149dp"
+                    android:layout_height="131dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="@dimen/my_value"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="36dp"
+                    android:background="@drawable/connectwithpatients"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/search_bar" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="149dp"
+                    android:layout_height="131dp"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="36dp"
+                    android:padding="@dimen/my_value"
+                    android:background="@drawable/connectwithamigos"
+                    app:layout_constraintStart_toEndOf="@+id/rectangle_1"
+                    app:layout_constraintTop_toBottomOf="@+id/search_bar" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="379dp"
+                    android:layout_height="115dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_marginTop="200dp"
+                    android:background="@drawable/goals"
+                    android:padding="@dimen/my_value"
+                    app:layout_constraintEnd_toEndOf="@+id/view"
+                    app:layout_constraintHorizontal_bias="0.311"
+                    app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+                    app:layout_constraintTop_toBottomOf="@+id/search_bar" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="48dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="24dp"
+                    android:padding="@dimen/my_value"
+                    android:src="@drawable/diary_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="60.24dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="308dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/bot"
+                    android:padding="@dimen/my_value"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/formbtn"
+                    android:layout_width="311dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/rectangle_1"
+                    android:elevation="1000dp"
+                    android:padding="@dimen/my_value"
+                    android:shadowRadius="10000"
+                    android:text="Take your daily quiz"
+                    android:textColor="@color/white"
+                    app:circularflow_radiusInDP="10000dp"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                    app:layout_constraintHorizontal_bias="0.448"
+                    app:layout_constraintStart_toStartOf="@+id/imageView2"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </ScrollView>
+
+
+
+</FrameLayout>

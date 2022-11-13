@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="@dimen/my_value"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_gradient_drawable"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    tools:context=".Splash_Screen">
+
+    <TextView
+
+        android:id="@+id/textView7"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:padding="@dimen/my_value"
+        android:gravity="right|center_vertical"
+        android:text="@string/hi_friend_"
+        android:textColor="#AB447DEB"
+
+        android:textSize="48dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/amigo_logo_"
+        android:layout_width="691dp"
+        android:layout_height="390dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-143dp"
+        android:padding="@dimen/my_value"
+        android:layout_marginEnd="-142dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/log_in"
+        android:layout_width="112dp"
+        android:layout_height="67dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:gravity="right|center_vertical"
+        android:lineSpacingExtra="-16sp"
+        android:text="@string/log_in"
+        android:textAllCaps="true"
+        android:textAppearance="@style/log_in"
+        android:textColor="#AB447DEB"
+        android:textSize="32dp"
+        android:padding="@dimen/my_value"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amigo_logo_" />
+
+    <TextView
+        android:id="@+id/Sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="72dp"
+        android:padding="@dimen/my_value"
+        android:layout_marginTop="16dp"
+        android:gravity="right|center_vertical"
+        android:lineSpacingExtra="-16sp"
+        android:text="Sign Up"
+        android:textAllCaps="true"
+        android:textAppearance="@style/log_in"
+        android:textColor="#AB447DEB"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/log_in"
+        app:layout_constraintTop_toBottomOf="@+id/amigo_logo_" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

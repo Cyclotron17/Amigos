@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Amigos</string>
+
+
+    <string name="hi_friend_">HI FRIEND!</string>
+
+    <string name="log_in">log in</string>
+    <string name="Sign_in">Sign in</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

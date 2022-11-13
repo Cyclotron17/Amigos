@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "941734935693",
+    "project_id": "amigos-5a0cc",
+    "storage_bucket": "amigos-5a0cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941734935693:android:f0ccd3dfa2b26336c536c4",
+        "android_client_info": {
+          "package_name": "com.example.amigos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941734935693-j5t1oj7mktuls8lpa8gsgenrata43f6e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.amigos",
+            "certificate_hash": "a0a4a36f76075e2e506cc17f373dade900f8c018"
+          }
+        },
+        {
+          "client_id": "941734935693-5llrdjnbee9h9mo80rfknajdlp0m1ngi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDXrWHj2O6IILm372nxYo8WRD_J6U8p_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941734935693-5llrdjnbee9h9mo80rfknajdlp0m1ngi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
