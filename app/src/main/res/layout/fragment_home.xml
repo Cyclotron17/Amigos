@@ -20,7 +20,9 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                >
 
                 <ImageView
                     android:id="@+id/imageView"
@@ -30,6 +32,7 @@
                     android:layout_marginTop="4dp"
                     android:padding="@dimen/my_value"
                     android:src="@drawable/notification"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,28 +40,32 @@
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/my_value"
                     android:layout_marginStart="28dp"
                     android:layout_marginTop="4dp"
-
                     android:fontFamily="@font/roboto_bold"
+
+                    android:padding="@dimen/my_value"
                     android:text="How are you today?"
                     android:textSize="32dp"
                     app:layout_constraintEnd_toStartOf="@+id/imageView"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <View
                     android:id="@+id/search_bar"
-                    android:layout_width="379dp"
-                    android:layout_height="78dp"
-                    android:padding="@dimen/my_value"
-
+                    android:layout_width="291dp"
+                    android:layout_height="68dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="20dp"
+
                     android:background="@drawable/search_bar"
+                    android:foregroundGravity="center_horizontal"
+                    android:padding="@dimen/my_value"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.315"
+                    app:layout_constraintHorizontal_weight="10"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -97,32 +104,33 @@
 
                 <View
                     android:id="@+id/rectangle_1"
-                    android:layout_width="149dp"
-                    android:layout_height="131dp"
+                    android:layout_width="110dp"
+                    android:layout_height="103dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:padding="@dimen/my_value"
                     android:layout_marginStart="28dp"
                     android:layout_marginTop="36dp"
                     android:background="@drawable/connectwithpatients"
+                    android:padding="@dimen/my_value"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/search_bar" />
 
                 <View
                     android:id="@+id/view"
-                    android:layout_width="149dp"
-                    android:layout_height="131dp"
-                    android:layout_marginStart="52dp"
+                    android:layout_width="110dp"
+                    android:layout_height="103dp"
+                    android:layout_marginStart="72dp"
                     android:layout_marginTop="36dp"
-                    android:padding="@dimen/my_value"
                     android:background="@drawable/connectwithamigos"
+                    android:padding="@dimen/my_value"
+                    app:layout_constraintEnd_toEndOf="@+id/search_bar"
                     app:layout_constraintStart_toEndOf="@+id/rectangle_1"
                     app:layout_constraintTop_toBottomOf="@+id/search_bar" />
 
                 <View
                     android:id="@+id/view2"
-                    android:layout_width="379dp"
-                    android:layout_height="115dp"
+                    android:layout_width="298dp"
+                    android:layout_height="81dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
 
@@ -135,31 +143,33 @@
                     app:layout_constraintTop_toBottomOf="@+id/search_bar" />
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/diary"
                     android:layout_width="48dp"
                     android:layout_height="60dp"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="16dp"
                     android:padding="@dimen/my_value"
                     android:src="@drawable/diary_icon"
-                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                    app:layout_constraintHorizontal_bias="0.04"
+                    app:layout_constraintStart_toStartOf="@+id/view2"
                     app:layout_constraintTop_toBottomOf="@+id/view2" />
 
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="60.24dp"
                     android:layout_height="60dp"
-                    android:layout_marginStart="308dp"
+                    android:layout_marginStart="284dp"
                     android:layout_marginTop="16dp"
-                    android:src="@drawable/bot"
                     android:padding="@dimen/my_value"
+                    android:src="@drawable/bot"
+                    app:layout_constraintEnd_toEndOf="@+id/view2"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/view2" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/formbtn"
-                    android:layout_width="311dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="279dp"
+                    android:layout_height="76dp"
                     android:layout_marginTop="32dp"
                     android:background="@drawable/rectangle_1"
                     android:elevation="1000dp"
@@ -170,8 +180,8 @@
                     app:circularflow_radiusInDP="10000dp"
                     app:layout_constraintEnd_toEndOf="@+id/imageView3"
                     app:layout_constraintHorizontal_bias="0.448"
-                    app:layout_constraintStart_toStartOf="@+id/imageView2"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+                    app:layout_constraintStart_toStartOf="@+id/diary"
+                    app:layout_constraintTop_toBottomOf="@+id/diary" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,11 +15,11 @@
     <TextView
 
         android:id="@+id/textView7"
-        android:layout_width="248dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:padding="@dimen/my_value"
         android:gravity="right|center_vertical"
+        android:padding="@dimen/my_value"
         android:text="@string/hi_friend_"
         android:textColor="#AB447DEB"
 
@@ -31,16 +31,16 @@
 
     <ImageView
         android:id="@+id/amigo_logo_"
-        android:layout_width="691dp"
-        android:layout_height="390dp"
-        android:layout_alignParentLeft="true"
+        android:layout_width="295dp"
+        android:layout_height="318dp"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="-143dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="-143dp"
         android:padding="@dimen/my_value"
-        android:layout_marginEnd="-142dp"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.131"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -48,6 +48,7 @@
         android:id="@+id/log_in"
         android:layout_width="112dp"
         android:layout_height="67dp"
+        android:visibility="invisible"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
@@ -73,6 +74,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="72dp"
         android:padding="@dimen/my_value"
+        android:visibility="invisible"
         android:layout_marginTop="16dp"
         android:gravity="right|center_vertical"
         android:lineSpacingExtra="-16sp"

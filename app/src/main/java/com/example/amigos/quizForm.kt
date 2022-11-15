@@ -113,9 +113,10 @@ class quizForm : AppCompatActivity() {
 
 
     }
+    //wrong
     private fun wrongAns(option:Button){
 
-        option.background=resources.getDrawable(R.drawable.wrong_bg)
+        option.background=resources.getDrawable(R.drawable.right_bg)
 
         wrongAnswerCount++
 

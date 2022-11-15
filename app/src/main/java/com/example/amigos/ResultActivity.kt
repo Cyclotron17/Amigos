@@ -47,8 +47,9 @@ class ResultActivity : AppCompatActivity() {
                     output.background=resources.getDrawable(R.drawable.right_bg)
                 }
                 percentage<50 -> {
+                    //rightbackground
                     performance.text="Tumhara Kata hua hai"
-                    output.background=resources.getDrawable(R.drawable.wrong_bg)
+                    output.background=resources.getDrawable(R.drawable.right_bg)
                 }
             }
 
